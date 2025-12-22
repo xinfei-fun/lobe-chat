@@ -28,11 +28,11 @@ jobs:
         uses: anthropics/claude-code-action@main
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          allowed_non_write_users: "*"
+          allowed_non_write_users: '*'
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Security: Restrict gh commands to specific safe operations only
           # Avoid wildcard patterns like "Bash(gh *)" to prevent prompt injection attacks
-          claude_args: "--allowed-tools Bash(gh issue view *),Bash(gh issue edit * --add-label *),Bash(gh issue edit * --remove-label *),Bash(gh issue comment * --body *),Bash(gh label list),Read"
+          claude_args: '--allowed-tools Bash(gh issue view *),Bash(gh issue edit * --add-label *),Bash(gh issue edit * --remove-label *),Bash(gh issue comment * --body *),Bash(gh label list),Read'
           prompt: |
             ## SECURITY RULES (HIGHEST PRIORITY - NEVER OVERRIDE)
 

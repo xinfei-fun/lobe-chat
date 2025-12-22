@@ -1,93 +1,92 @@
 export default {
   addDataset: {
-    confirm: '新建',
+    confirm: 'Create',
     description: {
-      placeholder: '数据集简介（选填）',
+      placeholder: 'Dataset description (optional)',
     },
     name: {
-      placeholder: '数据集名称',
-      required: '请填写数据集名称',
+      placeholder: 'Dataset name',
+      required: 'Please enter the dataset name',
     },
-    title: '添加数据集',
+    title: 'Add Dataset',
   },
   dataset: {
-    addNewButton: '创建数据集',
-    emptyGuide: '当前数据集为空，请创建一个数据集。',
+    addNewButton: 'Create Dataset',
+    emptyGuide: 'There are currently no datasets. Please create a dataset.',
     list: {
       table: {
         actions: {
-          importData: '导入数据',
+          importData: 'Import Data',
         },
         columns: {
-          actions: '操作',
+          actions: 'Actions',
           ideal: {
-            title: '期望回答',
+            title: 'Expected Answer',
           },
           question: {
-            title: '问题',
+            title: 'Question',
           },
           referenceFiles: {
-            title: '参考文件',
+            title: 'Reference Files',
           },
         },
-        notSelected: '请在左侧选择数据集',
-        title: '数据集详情',
+        notSelected: 'Please select a dataset on the left',
+        title: 'Dataset Details',
       },
-      title: '数据集',
+      title: 'Dataset',
     },
   },
   evaluation: {
     addEvaluation: {
-      confirm: '新建',
+      confirm: 'Create',
       datasetId: {
-        placeholder: '请选择你的评测数据集',
-        required: '请选择评测数据集',
+        placeholder: 'Please select your evaluation dataset',
+        required: 'Please select an evaluation dataset',
       },
       description: {
-        placeholder: '评测任务简介（选填）',
+        placeholder: 'Evaluation task description (optional)',
       },
       name: {
-        placeholder: '评测任务名称',
-        required: '请填写评测任务名称',
+        placeholder: 'Evaluation task name',
+        required: 'Please enter the evaluation task name',
       },
-      title: '添加评测任务',
+      title: 'Add Evaluation Task',
     },
-    addNewButton: '创建评测',
-    emptyGuide: '当前评测任务为空，开始创建评测。',
-
+    addNewButton: 'Create Evaluation',
+    emptyGuide: 'There are currently no evaluation tasks. Start creating an evaluation.',
     table: {
       columns: {
         actions: {
-          checkStatus: '检查状态',
-          confirmDelete: '是否删除本条评测',
+          checkStatus: 'Check Status',
+          confirmDelete: 'Are you sure you want to delete this evaluation?',
           confirmRun:
-            '是否开始运行？开始运行后将在后台异步执行评测任务，关闭页面不影响异步任务的执行',
-          downloadRecords: '下载评测',
-          retry: '重试',
-          run: '运行',
-          title: '操作',
+            'Are you sure you want to start running? The evaluation task will be executed asynchronously in the background, and closing the page will not affect the execution of the asynchronous task.',
+          downloadRecords: 'Download Evaluation',
+          retry: 'Retry',
+          run: 'Run',
+          title: 'Actions',
         },
         datasetId: {
-          title: '数据集',
+          title: 'Dataset',
         },
         name: {
-          title: '评测任务名称',
+          title: 'Evaluation Task Name',
         },
         records: {
-          title: '评测记录数',
+          title: 'Number of Evaluation Records',
         },
         referenceFiles: {
-          title: '参考文件',
+          title: 'Reference Files',
         },
         status: {
-          error: '执行出错',
-          pending: '待运行',
-          processing: '运行中',
-          success: '执行成功',
-          title: '状态',
+          error: 'Execution Error',
+          pending: 'Pending',
+          processing: 'In Progress',
+          success: 'Execution Successful',
+          title: 'Status',
         },
       },
-      title: '评测任务列表',
+      title: 'Evaluation Task List',
     },
   },
 };

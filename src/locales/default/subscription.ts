@@ -2,22 +2,22 @@ export default {
   plans: {
     plan: {
       enterprise: {
-        title: '企业版',
+        title: 'Enterprise',
       },
       free: {
-        title: '免费版',
+        title: 'Free',
       },
       hobby: {
-        title: '自助版',
+        title: 'Hobby',
       },
       premium: {
-        title: '进阶版',
+        title: 'Premium',
       },
       starter: {
-        title: '基础版',
+        title: 'Starter',
       },
       ultimate: {
-        title: '专业版',
+        title: 'Ultimate',
       },
     },
   },

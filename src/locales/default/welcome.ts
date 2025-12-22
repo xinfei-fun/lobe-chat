@@ -1,425 +1,467 @@
 export default {
   guide: {
     agents: {
-      replaceBtn: '换一批',
-      title: '新增助手推荐：',
+      replaceBtn: 'Refresh',
+      title: 'New Assistant Recommendations:',
     },
     defaultMessage:
-      '我是您的私人智能助理 {{appName}} ，请问现在能帮您做什么？<br />如果需要获得更加专业或定制的助手，可以点击 <plus /> 创建自定义助手',
-    defaultMessageWithoutCreate: '我是您的私人智能助理 {{appName}} ，请问现在能帮您做什么？',
+      "I'm your personal AI assistant {{appName}}. How can I help you today?<br />If you need a more professional or customized assistant, click <plus /> to create your own.",
+    defaultMessageWithoutCreate:
+      "I'm your personal AI assistant {{appName}}. How can I help you today?",
     groupActivities: {
-      // 分析小队专属活动
       analysis: {
         codeReview: {
-          description: '对代码变更和实现进行技术讨论和同行评审',
+          description: 'Technical discussions and peer reviews of code changes and implementations',
           emoji: '💻',
-          prompt: '让我们一起审查一些代码。你能帮助我们分析这些代码并识别改进的地方吗？',
-          title: '代码评审',
+          prompt:
+            "Let's review some code together. Can you help us analyze it and identify areas for improvement?",
+          title: 'Code Review',
         },
         investment: {
-          description: '分析市场、讨论投资策略并分享财经洞察',
+          description:
+            'Analyze markets, discuss investment strategies, and share financial insights',
           emoji: '📈',
-          prompt: '让我们一起分析市场。你能帮助我们讨论投资策略并分享财经洞察吗？',
-          title: '投资俱乐部',
+          prompt:
+            "Let's analyze the market together. Can you help us discuss strategies and share insights?",
+          title: 'Investment Club',
         },
         research: {
-          description: '探索科学概念、进行实验并分享发现',
+          description: 'Explore scientific concepts, conduct experiments, and share discoveries',
           emoji: '🔬',
-          prompt: '让我们一起探索科学吧！你能帮助我们进行实验并分享我们的发现吗？',
-          title: '科学展览',
+          prompt:
+            "Let's explore science together! Can you help us experiment and share our findings?",
+          title: 'Science Fair',
         },
         study: {
-          description: '协作学习会议，讨论概念并共同解决问题',
+          description:
+            'Collaborative study sessions to discuss concepts and solve problems together',
           emoji: '📚',
-          prompt: '让我们组成一个学习小组。你能帮助我们理解这些概念并一起解决问题吗？',
-          title: '学习小组',
+          prompt:
+            "Let's form a study group. Can you help us understand these concepts and solve problems together?",
+          title: 'Study Group',
         },
       },
-      // 头脑风暴小组专属活动
       brainstorm: {
         artWorkshop: {
-          description: '创作、评论和欣赏各种形式的视觉和数字艺术',
+          description: 'Create, critique, and appreciate various forms of visual and digital art',
           emoji: '🖼️',
-          prompt: '让我们举办艺术工作坊吧！你能帮助我们创作、评论和欣赏各种形式的艺术吗？',
-          title: '艺术工作坊',
+          prompt:
+            "Let's host an art workshop! Can you help us create, critique, and enjoy different forms of art?",
+          title: 'Art Workshop',
         },
         debate: {
-          description: '关于各种话题和时事的结构化讨论和论辩',
+          description: 'Structured discussions and debates on various topics and current events',
           emoji: '⚖️',
-          prompt: '让我们进行一场结构化辩论。你能帮助我们就这个话题组织一场有理有据的讨论吗？',
-          title: '辩论俱乐部',
+          prompt:
+            "Let's have a structured debate. Can you help us organize a well-reasoned discussion on this topic?",
+          title: 'Debate Club',
         },
         designReview: {
-          description: '针对设计概念、原型或创意作品的协作反馈会议',
+          description:
+            'Collaborative feedback sessions on design concepts, prototypes, or creative works',
           emoji: '🎨',
-          prompt: '我们需要审查一些设计作品。你能帮助我们对设计概念和原型提供建设性反馈吗？',
-          title: '设计评审',
+          prompt:
+            'We need to review some designs. Can you help us provide constructive feedback on concepts and prototypes?',
+          title: 'Design Review',
         },
         ideation: {
-          description: '多视角协作式创意产生和创造性问题解决',
+          description:
+            'Collaborative idea generation and creative problem-solving from multiple perspectives',
           emoji: '🧠',
-          prompt: '让我们开始为项目进行头脑风暴吧。你能帮助我们产生创意想法和解决方案吗？',
-          title: '头脑风暴',
+          prompt: "Let's brainstorm for the project. Can you help us generate ideas and solutions?",
+          title: 'Brainstorming',
         },
       },
-      // 游戏厅专属活动
       game: {
         debateClub: {
-          description: '关于各种话题和时事的结构化讨论和论辩',
+          description: 'Structured discussions and debates on various topics and current events',
           emoji: '⚖️',
-          prompt: '让我们进行一场结构化辩论。你能帮助我们就这个话题组织一场有理有据的讨论吗？',
-          title: '辩论俱乐部',
+          prompt:
+            "Let's have a structured debate. Can you help us organize a well-reasoned discussion on this topic?",
+          title: 'Debate Club',
         },
         gameNight: {
-          description: '有趣的互动游戏和活动，建立团队纽带并享受乐趣',
+          description:
+            'Fun interactive games and activities to build team bonds and enjoy together',
           emoji: '🎲',
-          prompt: '游戏之夜开始啦！你能帮助我们组织一些有趣的互动游戏来建立团队纽带吗？',
-          title: '游戏之夜',
+          prompt:
+            'Game night is on! Can you help us organize some fun interactive games to build team spirit?',
+          title: 'Game Night',
         },
         modelUN: {
-          description: '模拟联合国辩论和全球议题的外交谈判',
+          description: 'Simulated UN debates and diplomatic negotiations on global issues',
           emoji: '🌍',
-          prompt: '让我们模拟一场联合国辩论。你能帮助我们设置一个关于全球议题的外交谈判吗？',
-          title: '模拟联合国',
+          prompt:
+            "Let's simulate a UN debate. Can you help us set up a diplomatic negotiation on global issues?",
+          title: 'Model United Nations',
         },
         werewolf: {
-          description: '玩家通过策略和讨论找出狼人的社交推理游戏',
+          description:
+            'A social deduction game where players use strategy and discussion to find the werewolf',
           emoji: '🐺',
-          prompt: '让我们玩狼人游戏吧！你能帮助我们设置规则并主持这个社交推理游戏吗？',
-          title: '狼人游戏',
+          prompt:
+            "Let's play Werewolf! Can you help us set the rules and host this social deduction game?",
+          title: 'Werewolf Game',
         },
       },
-
-      // 通用活动（作为后备选项）
       general: {
         brainstorm: {
-          description: '多视角协作式创意产生和创造性问题解决',
+          description:
+            'Collaborative idea generation and creative problem-solving from multiple perspectives',
           emoji: '🧠',
-          prompt: '让我们开始为项目进行头脑风暴吧。你能帮助我们产生创意想法和解决方案吗？',
-          title: '头脑风暴',
+          prompt: "Let's brainstorm for the project. Can you help us generate ideas and solutions?",
+          title: 'Brainstorming',
         },
         debate: {
-          description: '关于各种话题和时事的结构化讨论和论辩',
+          description: 'Structured discussions and debates on various topics and current events',
           emoji: '⚖️',
-          prompt: '让我们进行一场结构化辩论。你能帮助我们就这个话题组织一场有理有据的讨论吗？',
-          title: '辩论俱乐部',
+          prompt:
+            "Let's have a structured debate. Can you help us organize a well-reasoned discussion on this topic?",
+          title: 'Debate Club',
         },
         languagePractice: {
-          description: '与母语者一起练习口语和学习新语言',
+          description: 'Practice speaking and learn new languages with native speakers',
           emoji: '🗣️',
-          prompt: '让我们一起练习新语言吧。你能帮助我们学习和练习说这门语言吗？',
-          title: '语言练习',
+          prompt: "Let's practice a new language together. Can you help us learn and speak it?",
+          title: 'Language Practice',
         },
         studyGroup: {
-          description: '协作学习会议，讨论概念并共同解决问题',
+          description:
+            'Collaborative study sessions to discuss concepts and solve problems together',
           emoji: '📚',
-          prompt: '让我们组成一个学习小组。你能帮助我们理解这些概念并一起解决问题吗？',
-          title: '学习小组',
+          prompt:
+            "Let's form a study group. Can you help us understand these concepts and solve problems together?",
+          title: 'Study Group',
         },
       },
-
-      // 美食研发团队专属活动
       planning: {
         cookingClass: {
-          description: '学习和分享烹饪技巧、食谱和烹饪传统',
+          description: 'Learn and share cooking skills, recipes, and culinary traditions',
           emoji: '👨‍🍳',
-          prompt: '让我们上烹饪课吧！你能帮助我们一起学习新食谱和烹饪技巧吗？',
-          title: '烹饪课堂',
+          prompt:
+            "Let's take a cooking class! Can you help us learn new recipes and techniques together?",
+          title: 'Cooking Class',
         },
         fitnessChallenge: {
-          description: '设定团体健身目标、分享锻炼方法并相互激励',
+          description: 'Set group fitness goals, share workouts, and motivate each other',
           emoji: '💪',
-          prompt: '让我们开始健身挑战吧！你能帮助我们设定目标并相互激励保持健康吗？',
-          title: '健身挑战',
+          prompt:
+            "Let's start a fitness challenge! Can you help us set goals and stay motivated to stay healthy?",
+          title: 'Fitness Challenge',
         },
         planningPoker: {
-          description: '使用卡片估算项目任务和工作量的敏捷估算技术',
+          description:
+            'Agile estimation technique using cards to estimate project tasks and workload',
           emoji: '🃏',
-          prompt: '我们正在为项目进行规划扑克。你能帮助我们使用敏捷技术估算这些任务的工作量吗？',
-          title: '规划扑克',
+          prompt:
+            "We're doing planning poker for the project. Can you help us estimate tasks using agile techniques?",
+          title: 'Planning Poker',
         },
         travelPlanning: {
-          description: '规划旅行、分享旅行经历并发现新目的地',
+          description: 'Plan trips, share travel experiences, and discover new destinations',
           emoji: '✈️',
-          prompt: '让我们一起规划旅行吧！你能帮助我们研究目的地并规划旅行行程吗？',
-          title: '旅行规划',
+          prompt:
+            "Let's plan a trip together! Can you help us research destinations and create an itinerary?",
+          title: 'Travel Planning',
         },
       },
-
-      // 产品研发团队专属活动
       product: {
         codeReview: {
-          description: '对代码变更和实现进行技术讨论和同行评审',
+          description: 'Technical discussions and peer reviews of code changes and implementations',
           emoji: '💻',
-          prompt: '让我们一起审查一些代码。你能帮助我们分析这些代码并识别改进的地方吗？',
-          title: '代码评审',
+          prompt:
+            "Let's review some code together. Can you help us analyze it and identify areas for improvement?",
+          title: 'Code Review',
         },
         designReview: {
-          description: '针对设计概念、原型或创意作品的协作反馈会议',
+          description:
+            'Collaborative feedback sessions on design concepts, prototypes, or creative works',
           emoji: '🎨',
-          prompt: '我们需要审查一些设计作品。你能帮助我们对设计概念和原型提供建设性反馈吗？',
-          title: '设计评审',
+          prompt:
+            'We need to review some designs. Can you help us provide constructive feedback on concepts and prototypes?',
+          title: 'Design Review',
         },
         sprintPlanning: {
-          description: '使用卡片估算项目任务和工作量的敏捷估算技术',
+          description:
+            'Agile estimation technique using cards to estimate project tasks and workload',
           emoji: '🃏',
-          prompt: '我们正在为项目进行规划扑克。你能帮助我们使用敏捷技术估算这些任务的工作量吗？',
-          title: '规划扑克',
+          prompt:
+            "We're doing planning poker for the project. Can you help us estimate tasks using agile techniques?",
+          title: 'Planning Poker',
         },
         techExchange: {
-          description: '讨论新兴技术、创新和行业趋势',
+          description: 'Discuss emerging technologies, innovations, and industry trends',
           emoji: '🚀',
-          prompt: '让我们进行技术交流吧！你能帮助我们讨论新兴技术和行业趋势吗？',
-          title: '技术交流',
+          prompt:
+            "Let's have a tech exchange! Can you help us discuss emerging technologies and trends?",
+          title: 'Tech Exchange',
         },
       },
-
-      title: '团队聊天用法推荐',
-      // 写作圈专属活动
+      title: 'Team Chat Use Recommendations',
       writing: {
         bookClub: {
-          description: '对书籍、故事和文学作品进行文学讨论和分析',
+          description: 'Literary discussions and analysis of books, stories, and literature',
           emoji: '📖',
-          prompt: '让我们开始读书俱乐部讨论。你能帮助我们分析这本书并一起探讨其主题吗？',
-          title: '读书俱乐部',
+          prompt:
+            "Let's start a book club discussion. Can you help us analyze the book and explore its themes?",
+          title: 'Book Club',
         },
         movieClub: {
-          description: '一起观看和讨论电影、纪录片和视觉媒体',
+          description: 'Watch and discuss movies, documentaries, and visual media together',
           emoji: '🎬',
-          prompt: '让我们开始电影俱乐部讨论。你能帮助我们分析这部电影并一起探讨其主题吗？',
-          title: '电影俱乐部',
+          prompt:
+            "Let's start a movie club discussion. Can you help us analyze the film and explore its themes?",
+          title: 'Movie Club',
         },
         musicSession: {
-          description: '协作音乐创作、分享和欣赏会议',
+          description: 'Collaborative music creation, sharing, and appreciation sessions',
           emoji: '🎵',
-          prompt: '让我们进行音乐即兴演奏吧！你能帮助我们一起创作和欣赏音乐吗？',
-          title: '音乐即兴',
+          prompt:
+            "Let's have a music jam session! Can you help us create and enjoy music together?",
+          title: 'Music Jam',
         },
         studyGroup: {
-          description: '协作学习会议，讨论概念并共同解决问题',
+          description:
+            'Collaborative study sessions to discuss concepts and solve problems together',
           emoji: '📚',
-          prompt: '让我们组成一个学习小组。你能帮助我们理解这些概念并一起解决问题吗？',
-          title: '学习小组',
+          prompt:
+            "Let's form a study group. Can you help us understand these concepts and solve problems together?",
+          title: 'Study Group',
         },
       },
     },
-    groupMessage: '欢迎使用群聊！与多个 AI 助手在共享的对话空间中协作。',
+    groupMessage:
+      'Welcome to group chat! Collaborate with multiple AI assistants in a shared conversation space.',
     groupTemplates: {
       analysis: {
-        description: '数据驱动洞察，深度研究分析',
+        description: 'Data-driven insights and in-depth research analysis',
         members: [
           {
             avatar: '📊',
             backgroundColor: '#E8F8F5',
             plugins: ['steam'],
-            systemRole: '你擅长处理和解释数据，通过图表和统计分析揭示数据背后的规律和趋势。',
-            title: '数据分析师',
+            systemRole:
+              "You're skilled at processing and interpreting data, revealing patterns and trends through charts and statistical analysis.",
+            title: 'Data Analyst',
           },
           {
             avatar: '🧑‍🔬',
             backgroundColor: '#E8F5FF',
-            systemRole: '你是研究专家，专门负责信息收集和深度调研，能够从多个维度全面分析问题。',
-            title: '研究专家',
+            systemRole:
+              "You're a research expert, specializing in information gathering and deep analysis from multiple perspectives.",
+            title: 'Research Specialist',
           },
           {
             avatar: '📈',
             backgroundColor: '#FFF7E8',
-            systemRole: '你是统计专家，精通各种统计方法和模型，能够从数据中提取有价值的商业洞察。',
-            title: '统计专家',
+            systemRole:
+              "You're a statistics expert, proficient in various statistical methods and models, extracting valuable business insights from data.",
+            title: 'Statistician',
           },
           {
             avatar: '🧮',
             backgroundColor: '#F0F8FF',
-            systemRole: '你是量化分析师，专门进行量化建模和风险评估，用数学方法解决复杂问题。',
-            title: '量化分析师',
+            systemRole:
+              "You're a quantitative analyst, focused on modeling and risk assessment using mathematical methods to solve complex problems.",
+            title: 'Quantitative Analyst',
           },
         ],
-        title: '分析小队',
+        title: 'Analysis Squad',
       },
       brainstorm: {
-        description: '多视角创意思维，激发无限可能',
+        description: 'Creative thinking from multiple perspectives to spark endless possibilities',
         members: [
           {
             avatar: '🧠',
             backgroundColor: '#E8F5FF',
             systemRole:
-              '你是一位创意总监，擅长从宏观角度把控创意方向，能够将抽象概念转化为具体可执行的创意方案。',
-            title: '创意总监',
+              "You're a creative director, skilled at guiding creative direction from a macro perspective and turning abstract ideas into actionable plans.",
+            title: 'Creative Director',
           },
           {
             avatar: '🧑‍🔬',
             backgroundColor: '#FFF7E8',
             systemRole:
-              '你是创新专家，专门负责发现新颖的解决方案和突破性思维，善于跳出固有框架思考问题。',
-            title: '创新专家',
+              "You're an innovation expert, focused on discovering novel solutions and breakthrough thinking, thinking outside the box.",
+            title: 'Innovation Expert',
           },
           {
             avatar: '🎨',
             backgroundColor: '#F6E8FF',
             systemRole:
-              '你是设计思维专家，从用户体验和视觉呈现角度思考问题，注重创意的可视化表达。',
-            title: '设计思维师',
+              "You're a design thinking expert, approaching problems from user experience and visual presentation perspectives, emphasizing visual expression.",
+            title: 'Design Thinker',
           },
         ],
-        title: '头脑风暴小组',
+        title: 'Brainstorming Group',
       },
       game: {
-        description: '畅玩各种多人文字游戏，例如狼人杀和谁是卧底',
+        description: 'Play various multiplayer text games like Werewolf and Spyfall',
         members: [
           {
             avatar: '🧠',
             backgroundColor: '#E8F5FF',
-            systemRole: '你是一位主持人，擅长组织各种多人文字游戏，能够引导玩家进行游戏。',
-            title: '游戏主持人',
+            systemRole:
+              "You're a game host, skilled at organizing multiplayer text games and guiding players through gameplay.",
+            title: 'Game Host',
           },
           {
             avatar: '🧑‍🔬',
             backgroundColor: '#FFF7E8',
-            systemRole: '你擅长参与各种多人文字游戏，能够根据游戏规则进行游戏。',
-            title: '游戏玩家',
+            systemRole:
+              "You're good at participating in multiplayer text games and can play according to the rules.",
+            title: 'Game Player',
           },
           {
             avatar: '🎨',
             backgroundColor: '#F6E8FF',
-            systemRole: '你擅长参与各种多人文字游戏，能够根据游戏规则进行游戏。',
-            title: '游戏玩家',
+            systemRole:
+              "You're good at participating in multiplayer text games and can play according to the rules.",
+            title: 'Game Player',
           },
           {
             avatar: '🧑‍🎨',
             backgroundColor: '#F6E8FF',
-            systemRole: '你擅长参与各种多人文字游戏，能够根据游戏规则进行游戏。',
-            title: '游戏玩家',
+            systemRole:
+              "You're good at participating in multiplayer text games and can play according to the rules.",
+            title: 'Game Player',
           },
         ],
-        title: '游戏厅',
+        title: 'Game Room',
       },
       planning: {
-        description: '策略规划与项目管理，统筹全局',
+        description: 'Strategic planning and project management with a big-picture view',
         members: [
           {
             avatar: '📋',
             backgroundColor: '#E8F5FF',
-            systemRole: '你负责项目的整体规划、进度管控和资源协调，确保项目按时高质量完成。',
-            title: '厨师',
+            systemRole:
+              "You're responsible for overall project planning, progress control, and resource coordination to ensure timely and high-quality delivery.",
+            title: 'Chef',
           },
           {
             avatar: '🎯',
             backgroundColor: '#FFF7E8',
-            systemRole: '你负责制定长期战略规划，分析市场机会，制定目标和实现路径。',
-            title: '原料采购专家',
+            systemRole:
+              "You're in charge of long-term strategic planning, analyzing market opportunities, setting goals, and defining paths to success.",
+            title: 'Ingredient Procurement Expert',
           },
           {
             avatar: '🧑‍🎨',
             backgroundColor: '#F0F8FF',
-            systemRole: '你负责制定详细的执行计划，协调各部门资源，确保计划的可执行性。',
-            title: '美食研发专家',
+            systemRole:
+              "You're responsible for detailed execution plans, coordinating resources across departments to ensure feasibility.",
+            title: 'Culinary R&D Expert',
           },
         ],
-        title: '美食研发团队',
+        title: 'Culinary R&D Team',
       },
       product: {
-        description: '产品设计与开发，打造优质产品',
+        description: 'Product design and development to build high-quality products',
         members: [
           {
             avatar: '🎨',
             backgroundColor: '#F6E8FF',
-            systemRole: '你是设计师，擅长设计各种类型的产品，能够根据产品需求进行设计。',
-            title: '设计师',
+            systemRole:
+              "You're a designer, skilled in designing various types of products based on requirements.",
+            title: 'Designer',
           },
           {
             avatar: '🧑',
             backgroundColor: '#E8F5FF',
             systemRole:
-              '你是产品经理，负责产品的规划、设计、开发和维护，确保产品的质量和用户体验。',
-            title: '产品经理',
+              "You're a product manager, responsible for planning, designing, developing, and maintaining products to ensure quality and user experience.",
+            title: 'Product Manager',
           },
           {
             avatar: '🧑‍💻',
             backgroundColor: '#E8F8F5',
             systemRole:
-              '你是经验丰富的全栈工程师，擅长开发各种类型的产品，能够根据产品需求进行开发。',
-            title: '全栈工程师',
+              "You're an experienced full-stack engineer, skilled in developing various types of products based on requirements.",
+            title: 'Full-Stack Engineer',
           },
         ],
-        title: '产品研发团队',
+        title: 'Product Development Team',
       },
       writing: {
-        description: '内容创作与编辑，打造优质文案',
+        description: 'Content creation and editing to craft high-quality copy',
         members: [
           {
             avatar: '✍️',
             backgroundColor: '#F6E8FF',
-            systemRole: '你擅长创作各类文体的内容，能够根据不同场景和受众调整写作风格。',
-            title: '内容写手',
+            systemRole:
+              "You're skilled at writing in various styles and can adapt your tone for different audiences and scenarios.",
+            title: 'Content Writer',
           },
           {
             avatar: '🧑‍🎨',
             backgroundColor: '#E8F8F5',
-            systemRole: '你是编辑，负责文本的校对、润色和优化，确保内容的准确性、流畅性和专业性。',
-            title: '编辑',
+            systemRole:
+              "You're an editor, responsible for proofreading, polishing, and optimizing text to ensure accuracy, fluency, and professionalism.",
+            title: 'Editor',
           },
         ],
-        title: '写作圈',
+        title: "Writers' Circle",
       },
     },
     questions: {
-      moreBtn: '了解更多',
-      title: '试着问问：',
+      moreBtn: 'Learn More',
+      title: 'Try asking:',
     },
     welcome: {
-      afternoon: '下午好',
-      morning: '早上好',
-      night: '晚上好',
-      noon: '中午好',
+      afternoon: 'Good afternoon',
+      morning: 'Good morning',
+      night: 'Good evening',
+      noon: 'Good noon',
     },
   },
-  header: '欢迎使用',
-  pickAgent: '或从下列助手模板选择',
-  skip: '跳过创建',
+  header: 'Welcome',
+  pickAgent: 'Or choose from the assistant templates below',
+  skip: 'Skip Creation',
   slogan: {
-    desc1: '开启大脑集群，激发思维火花。你的智能助理，一直都在。',
-    desc2: '创建你的第一个助手，让我们开始吧~',
-    title: '给自己一个更聪明的大脑',
+    desc1: 'Activate your brain cluster and spark new ideas. Your AI assistant is always here.',
+    desc2: "Create your first assistant and let's get started~",
+    title: 'Give yourself a smarter mind',
   },
   welcomeMessages: {
-    '1': '欢迎回来 😊',
-    '10': '生产力拉满～',
-    '11': '听候差遣！',
-    '12': '久等啦～☕',
-    '13': '开始行动吧 ✅',
-    '14': '带着新问题来了吧？',
-    '15': '今天也辛苦啦！',
-    '16': '灵感加载中',
-    '17': '上线即满电 ⚡',
-    '18': '出发！🚀',
-    '19': '我的思绪已跟上节奏。',
-    '2': '嗨，我在呢',
-    '20': '灵感即将出现',
-    '21': '只等你的召唤',
-    '22': '再启动高效模式！',
-    '23': '已进入待命状态',
-    '24': '准备迎接挑战',
-    '25': '新思路正在生成中',
-    '26': '前路清晰，启程！',
-    '27': '系统在线，随时帮你 💡',
-    '28': '努力加载好心情',
-    '29': '掌控节奏，从现在开始 🎵',
-    '3': '我已就绪！',
-    '30': '效率提升中 …',
-    '31': '今日目标，稳步达成 🎯',
-    '32': '让灵感多一点闪光 ✨',
-    '33': '任务更新完成',
-    '34': '一切准备就绪',
-    '35': '加速度模式启动',
-    '36': '嗯！我们开始吧 😎',
-    '37': '我在这儿等你回来',
-    '38': '继续保持好状态！',
-    '39': '别忘了休息一下～ 💤',
-    '4': '很高兴见到你',
-    '5': '准备开始了吗？',
-    '6': '今日事，我来帮',
-    '7': '继续前行吧！',
-    '8': '一起加油吧 💪',
-    '9': '开工咯 🏃‍♂️',
+    '1': 'Welcome back 😊',
+    '10': 'Productivity at max~',
+    '11': 'At your service!',
+    '12': 'Thanks for waiting ☕',
+    '13': 'Let’s get started ✅',
+    '14': 'Got new questions?',
+    '15': 'You’ve worked hard today!',
+    '16': 'Loading inspiration',
+    '17': 'Fully charged ⚡',
+    '18': 'Let’s go! 🚀',
+    '19': 'My thoughts are in sync.',
+    '2': "Hi, I'm here",
+    '20': 'Inspiration incoming',
+    '21': 'Just waiting for your call',
+    '22': 'Back to high-efficiency mode!',
+    '23': 'Standing by',
+    '24': 'Ready for the challenge',
+    '25': 'New ideas are forming',
+    '26': 'The path is clear—let’s go!',
+    '27': 'System online, ready to help 💡',
+    '28': 'Loading good vibes',
+    '29': 'Take control, starting now 🎵',
+    '3': 'All set!',
+    '30': 'Boosting efficiency …',
+    '31': 'Today’s goals, on track 🎯',
+    '32': 'Let your ideas shine ✨',
+    '33': 'Task update complete',
+    '34': 'Everything’s ready',
+    '35': 'Acceleration mode: ON',
+    '36': 'Alright! Let’s begin 😎',
+    '37': 'I’m here waiting for you',
+    '38': 'Keep up the good work!',
+    '39': 'Don’t forget to take a break~ 💤',
+    '4': 'Great to see you',
+    '5': 'Ready to begin?',
+    '6': 'Let me help with today’s tasks',
+    '7': 'Keep moving forward!',
+    '8': 'Let’s do this �',
+    '9': 'Let’s get to work 🏃‍♂️',
   },
 };

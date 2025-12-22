@@ -2,29 +2,31 @@ export default {
   Artifacts: 'Artifacts',
   FilePreview: {
     tabs: {
-      chunk: '分块',
-      file: '文件',
+      chunk: 'Chunk',
+      file: 'File',
     },
   },
-  Plugins: '插件',
+  Plugins: 'Plugins',
   artifacts: {
     display: {
-      code: '代码',
-      preview: '预览',
+      code: 'Code',
+      preview: 'Preview',
     },
     svg: {
-      copyAsImage: '复制为图片',
-      copyFail: '复制失败，错误原因:{{error}}',
-      copySuccess: '图片复制成功',
+      copyAsImage: 'Copy as Image',
+      copyFail: 'Copy failed, reason: {{error}}',
+      copySuccess: 'Image copied successfully',
       download: {
-        png: '下载为 PNG',
-        svg: '下载为 SVG',
+        png: 'Download as PNG',
+        svg: 'Download as SVG',
       },
     },
   },
-  emptyArtifactList: '当前 Artifacts 列表为空，请在会话中按需使用插件后再查看',
-  emptyKnowledgeList: '当前知识列表为空',
-  files: '文件',
-  messageDetail: '消息详情',
-  title: '工作区',
+  emptyArtifactList:
+    'The current Artifacts list is empty. Please use plugins in the session as needed before viewing.',
+  emptyKnowledgeList:
+    'The current knowledge list is empty. Please enable the knowledge base as needed during the conversation before viewing.',
+  files: 'Files',
+  messageDetail: 'Message Details',
+  title: 'Portal View',
 };

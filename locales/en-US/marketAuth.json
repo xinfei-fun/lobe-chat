@@ -106,11 +106,11 @@
         "placeholder": "Personal website URL"
       }
     },
+    "getStarted": "Get Started",
+    "save": "Save",
     "socialLinks": {
       "title": "Social Links"
     },
-    "getStarted": "Get Started",
-    "save": "Save",
     "success": "Profile updated successfully",
     "titleEdit": "Edit Profile",
     "titleFirstTime": "Complete Your Profile"

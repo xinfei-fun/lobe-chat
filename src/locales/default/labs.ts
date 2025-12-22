@@ -1,18 +1,18 @@
 export default {
-  desc: '这里会不定期更新我们正在探索的新功能，欢迎试用！',
+  desc: "Here you'll find occasional updates on new features we're exploring—feel free to try them out!",
   features: {
     assistantMessageGroup: {
-      desc: '将助手消息及其工具调用结果聚合到分组里显示',
-      title: '助手消息聚合分组',
+      desc: 'Group assistant messages and their tool call results together for display',
+      title: 'Assistant Message Grouping',
     },
     groupChat: {
-      desc: '启用多智能体群聊编排能力。',
-      title: '群聊（多智能体）',
+      desc: 'Enable multi-agent group chat coordination.',
+      title: 'Group Chat (Multi-Agent)',
     },
     inputMarkdown: {
-      desc: '在输入区域实时渲染 Markdown（粗体、代码块、表格等）。',
-      title: '输入框 Markdown 渲染',
+      desc: 'Render Markdown in the input area in real time (bold text, code blocks, tables, etc.).',
+      title: 'Input Markdown Rendering',
     },
   },
-  title: '实验室',
+  title: 'Labs',
 };

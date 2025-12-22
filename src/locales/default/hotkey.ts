@@ -4,86 +4,86 @@ const hotkey: HotkeyI18nTranslations & {
   desktop: Record<string, { desc?: string; title: string }>;
 } = {
   addUserMessage: {
-    desc: '将当前输入内容添加为用户消息，但不触发生成',
-    title: '添加一条用户消息',
+    desc: 'Add the current input as a user message without triggering generation',
+    title: 'Add a User Message',
   },
   clearCurrentMessages: {
-    desc: '清空当前会话的消息和上传的文件',
-    title: '清空会话消息',
+    desc: 'Clear the messages and uploaded files from the current conversation',
+    title: 'Clear Conversation Messages',
   },
   commandPalette: {
-    desc: '打开全局命令面板快速访问功能',
-    title: '命令面板',
+    desc: 'Open the global command palette for quick access to features',
+    title: 'Command Palette',
   },
   deleteAndRegenerateMessage: {
-    desc: '删除最后一条消息并重新生成',
-    title: '删除并重新生成',
+    desc: 'Delete the last message and regenerate',
+    title: 'Delete and Regenerate',
   },
   deleteLastMessage: {
-    desc: '删除最后一条消息',
-    title: '删除最后一条消息',
+    desc: 'Delete the last message',
+    title: 'Delete Last Message',
   },
   desktop: {
     openSettings: {
-      desc: '打开应用设置页面',
-      title: '应用设置',
+      desc: 'Open the application settings page',
+      title: 'Application Settings',
     },
     showApp: {
-      desc: '全局快捷键显示或隐藏主窗口',
-      title: '显示/隐藏主窗口',
+      desc: 'Toggle the main window visibility with a global shortcut',
+      title: 'Show/Hide Main Window',
     },
   },
   editMessage: {
-    desc: '通过按住 Alt 并双击消息进入编辑模式',
-    title: '编辑消息',
+    desc: 'Enter edit mode by holding Alt and double-clicking the message',
+    title: 'Edit Message',
   },
   navigateToChat: {
-    desc: '切换至会话标签并进入随便聊聊',
-    title: '切换至默认会话',
+    desc: 'Switch to the chat tab and start a casual conversation',
+    title: 'Switch to Default Chat',
   },
   openChatSettings: {
-    desc: '查看和修改当前会话的设置',
-    title: '打开会话设置',
+    desc: 'View and modify the settings for the current conversation',
+    title: 'Open Chat Settings',
   },
   openHotkeyHelper: {
-    desc: '查看所有快捷键的使用说明',
-    title: '打开快捷键帮助',
+    desc: 'View instructions for all keyboard shortcuts',
+    title: 'Open Hotkey Help',
   },
   regenerateMessage: {
-    desc: '重新生成最后一条消息',
-    title: '重新生成消息',
+    desc: 'Regenerate the last message',
+    title: 'Regenerate Message',
   },
   saveDocument: {
-    desc: '立即保存当前文档的所有更改',
-    title: '保存文档',
+    desc: 'Save all changes to the current document immediately',
+    title: 'Save Document',
   },
   saveTopic: {
-    desc: '保存当前话题并打开新话题',
-    title: '开启新话题',
+    desc: 'Save the current topic and open a new one',
+    title: 'Start a New Topic',
   },
   search: {
-    desc: '唤起当前页面主要搜索框',
-    title: '搜索',
+    desc: 'Activate the main search box on the current page',
+    title: 'Search',
   },
   showApp: {
-    desc: '快速唤起应用主窗口',
-    title: '显示主窗口',
+    desc: 'Quickly open the main application window',
+    title: 'Show Main Window',
   },
   switchAgent: {
-    desc: '通过按住 Ctrl 加数字 0~9 切换固定在侧边栏的助手',
-    title: '快捷切换助手',
+    desc: 'Switch between pinned assistants in the sidebar by holding Ctrl and pressing numbers 0-9',
+    title: 'Quick Switch Assistant',
   },
   toggleLeftPanel: {
-    desc: '显示或隐藏左侧面板',
-    title: '显示/隐藏左侧面板',
+    desc: 'Show or hide the left panel',
+    title: 'Toggle Left Panel',
   },
   toggleRightPanel: {
-    desc: '显示或隐藏右侧面板',
-    title: '显示/隐藏右侧面板',
+    desc: 'Show or hide the right panel',
+    title: 'Toggle Right Panel',
   },
   toggleZenMode: {
-    desc: '专注模式下，只显示当前会话，隐藏其他 UI',
-    title: '切换专注模式',
+    desc: 'In focus mode, only display the current conversation and hide other UI elements',
+    title: 'Toggle Focus Mode',
   },
 };
 
